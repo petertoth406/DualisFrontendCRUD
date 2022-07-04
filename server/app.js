@@ -1,6 +1,10 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const fs = require('fs');
+const cors = require("cors")
+express().use(cors({
+    "origin":"localhost"
+}))
 
 // create our express app
 const app = express()
